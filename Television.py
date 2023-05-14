@@ -24,8 +24,11 @@ class TV:
             self.channel = channel_number
     
     def get_volume(self) -> int:
+        return self.volume_level
 
     def set_volume(self,volume_level) -> int:
+        if volume_level >= 1 and volume_level <= 7: #Set volume level to new value within the range (1-7)
+            self.volume_level = volume_level
 
     def channel_uP(self) -> None:
 
