@@ -42,6 +42,14 @@ class TV:
         else:
             self.channel = 120
     
-    def volume_up(self) -> None:
+    def volume_up(self) -> None: 
+        if self.volume_level < 7: #Increase the channel by 1, return min value (1) if exceeds max value (7)
+            self.volume_level += 1
+        else:
+            self.volume_level = 1
 
-    def volume_down(self) -> None:
+    def volume_down(self) -> None: 
+        if self.volume_level > 1: #Decrease the channel by 1, return to max value (7) if at min value (1)
+            self.volume_level -= 1
+        else:
+            self.volume_level = 7
