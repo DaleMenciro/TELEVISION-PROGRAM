@@ -7,7 +7,7 @@ on - must be a bool, either on/off.
 class TV:
     def __init__(self):
         self.channel = 1 #Channel 1 to be default
-        self.volumeLevel = 1 #Volume 1 to be the dafault
+        self.volume_level = 1 #Volume 1 to be the dafault
         self.on = False # TV is off at default
 
     def turn_on(self) -> None:
