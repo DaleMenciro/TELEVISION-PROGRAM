@@ -11,8 +11,10 @@ class TV:
         self.on = False # TV is off at default
 
     def turn_on(self) -> None:
+        self.on = True #True to turn on TV
     
     def turn_off(self) -> None:
+        self.on = False #False to turn off TV
 
     def get_channel(self) -> int:
 
