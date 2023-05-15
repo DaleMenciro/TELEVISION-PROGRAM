@@ -30,6 +30,9 @@ class TV_GUI:
         self.TV_2_label = tk.Label(master, text=f"TV2's channel is {self.TV_2.get_channel()} and volume is {self.TV_2.get_volume()}", bg=self.primary_color, fg= "white")
         self.TV_2_label.pack(pady=10)
 
+        #Configure background color and font style
+        master.configure(bg= self.highlight_color)
+
 root = tk.Tk()
 TestTV_GUI = TV_GUI(root)
 root.mainloop()
