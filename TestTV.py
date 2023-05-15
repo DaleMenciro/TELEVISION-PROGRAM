@@ -25,10 +25,10 @@ class TV_GUI:
 
         #Create label to display the channel and volume level of TV 1 and TV 2
         self.TV_1_label = tk.Label(master, text=f"TV1's channel is {self.TV_1.get_channel()} and volume is {self.TV_1.get_volume()}")
-        self.TV_1_label.pack
+        self.TV_1_label.pack(pady=10)
 
         self.TV_2_label = tk.Label(master, text=f"TV2's channel is {self.TV_2.get_channel()} and volume is {self.TV_2.get_volume()}")
-        self.TV_2_label.pack
+        self.TV_2_label.pack(pady=10)
 
 root = tk.Tk()
 TestTV_GUI = TV_GUI(root)
