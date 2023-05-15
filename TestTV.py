@@ -32,6 +32,8 @@ class TV_GUI:
 
         #Configure background color and font style
         master.configure(bg= self.highlight_color)
+        for widget in master.winfo_children():
+            widget.configure(font=("Helvetica",12))
 
 root = tk.Tk()
 TestTV_GUI = TV_GUI(root)
