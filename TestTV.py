@@ -5,7 +5,7 @@ class TV_GUI:
     def __init__(self,master):
         self.master= master
         master.title("Test TV")
-        master.geometry("300x200")
+        master.geometry("300x100")
 
         self.primary_color = "#264653"
         self.secondary_color = "#2a9d8f"
