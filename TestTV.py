@@ -27,6 +27,9 @@ class TV_GUI:
         self.TV_1_label = tk.Label(master, text=f"TV1's channel is {self.TV_1.get_channel()} and volume is {self.TV_1.get_volume()}")
         self.TV_1_label.pack
 
+        self.TV_2_label = tk.Label(master, text=f"TV2's channel is {self.TV_2.get_channel()} and volume is {self.TV_2.get_volume()}")
+        self.TV_2_label.pack
+
 root = tk.Tk()
 TestTV_GUI = TV_GUI(root)
 root.mainloop()
