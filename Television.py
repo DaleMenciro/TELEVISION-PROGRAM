@@ -36,8 +36,8 @@ class TV:
         else:
             self.channel = 1
 
-    def channel_down(self) -> None: #Decrease the channel by 1, return to max value (120) if at min value (1)
-        if self.channel > 1:
+    def channel_down(self) -> None: 
+        if self.channel > 1: #Decrease the channel by 1, return to max value (120) if at min value (1)
             self.channel -= 1
         else:
             self.channel = 120
