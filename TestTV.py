@@ -15,6 +15,15 @@ class TV_GUI:
         self.TV_1 = TV()
         self.TV_2 = TV()
 
+        #Setting TV1 channel and volume level
+        self.TV_1.set_channel(30)
+        self.TV_1.set_volume(3)
+
+        #Setting TV2 channel and volume level
+        self.TV_2.set_channel(3)
+        self.TV_2.set_volume(2)
+
+
 root = tk.Tk()
 TestTV_GUI = TV_GUI(root)
 root.mainloop()
